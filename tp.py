@@ -1,17 +1,16 @@
-x=(1,2,3,4)
+
+class A:
+    def __init__(self):
+        print("Class A")
+    def add(self,x,y):
+        print(x+y)
+    def mul(self,x,y):
+        print(x*y)
+    def div(self,x,y):
+        print(x/y)
+        print(x//y)
  
-print("Current Tuple :",x)
- 
-print(x.index(2))
- 
-print(x.count(1))
-print(x.__sizeof__)
-print(x.__le__)
-print(x.__len__)
-print("Convert Tuple to List :")
-lst=list(x)
- 
-print(list(x))
-print(tuple(x))
-print(set(x))
- 
+a=A()
+a.add(10,90)
+a.mul(10,90)
+a.div(90,10)
